@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/img/logo-selfie.png";
+import barbielogo from "../assets/img/logo-barbie.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -7,12 +9,9 @@ export default function Home() {
     <div className="home_container">
       <div className="home_wrapper">
         <div className="hero_section">
-          <img src="../assets/img/logo-barbie.png" className="brand_logo" />
+          <img src={barbielogo} className="brand_logo" />
           <div className="svg_art">
-            <img
-              src="../assets/img/logo-selfie.png"
-              className="svg_art_title"
-            />
+            <img src={logo} className="svg_art_title" />
             <svg
               viewBox="0 0 1290 1292"
               fill="none"

@@ -3,6 +3,10 @@ import { removeBackground } from "../api_helpers/axios";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { updateImage } from "../comman/index";
 import { toast } from "react-hot-toast";
+import overLay2 from "../assets/img/overlay2.png";
+import overLay4 from "../assets/img/overlay4.png";
+import overLay5 from "../assets/img/overlay5.png";
+
 export default function Step1() {
   const navigate = useNavigate();
 
@@ -168,30 +172,20 @@ export default function Step1() {
                   onClick={() =>
                     setstate((prev) => ({
                       ...prev,
-                      overlayImage: "../assets/img/overlay2.png",
+                      overlayImage: overLay4,
                     }))
                   }
-                  src="../assets/img/overlay4.png"
+                  src={overLay4}
                   width={80}
                 />
                 <img
                   onClick={() =>
                     setstate((prev) => ({
                       ...prev,
-                      overlayImage: "../assets/img/overlay5.png",
+                      overlayImage: overLay5,
                     }))
                   }
-                  src="../assets/img/overlay5.png"
-                  width={80}
-                />
-                <img
-                  onClick={() =>
-                    setstate((prev) => ({
-                      ...prev,
-                      overlayImage: "../assets/img/overlay3.png",
-                    }))
-                  }
-                  src="../assets/img/overlay3.png"
+                  src={overLay5}
                   width={80}
                 />
               </div>

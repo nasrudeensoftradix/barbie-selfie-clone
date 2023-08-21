@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import "./App.css";
 import Home from "./component/Home";
 import EditImage from "./component/EditImage";
 import Step1 from "./component/Step1";
@@ -35,7 +34,7 @@ function App() {
   return (
     <>
       <Toaster position="top-right" reverseOrder={false} />
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import overlayImg2 from "../assets/img/overlay2.png";
+import backgroundImg from "../assets/img/background.png";
 function loadLocalImage(src) {
   return new Promise((resolve, reject) => {
     const img = new Image();
@@ -63,12 +65,8 @@ async function drawImageWithOverlay(
   const backgroundUrl = params.get("background");
   const overlayUrl = overlayImage;
 
-  const background = await loadLocalImage(
-    backgroundUrl || "../assets/img/background.png"
-  );
-  const overlay = await loadLocalImage(
-    overlayUrl || "../assets/img/overlay2.png"
-  );
+  const background = await loadLocalImage(backgroundUrl || backgroundImg);
+  const overlay = await loadLocalImage(overlayUrl || overlayImg2);
 
   const canvasHeight = 1920;
   const canvasWidth = 1080;
