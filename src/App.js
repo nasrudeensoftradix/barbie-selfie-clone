@@ -5,10 +5,10 @@ import EditImage from "./component/EditImage";
 import Step1 from "./component/Step1";
 import Step2 from "./component/Step2";
 import Step3 from "./component/Step3";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
